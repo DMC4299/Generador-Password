@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas Aleatorias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas</h1>
+        <form>
+            <label for="Longitud">Longitud (8-128)</label>
+            <input type="number" id="Longitud" min="8" max="128" required><br>
+            
+            <div class="options">
+                <label><input type="checkbox" id="numeros"> Incluye números</label><br>
+                <label><input type="checkbox" id="simbolos"> Incluye símbolos</label><br>
+                <label><input type="checkbox" id="mayusculas"> Incluye mayúsculas</label><br>
+                <label><input type="checkbox" id="minusculas"> Incluye minúsculas</label><br>
+            </div>
+            
+            <input type="button" value="Generar" id="Generar">
+            
+            <label for="Contragen">Contraseña generada:</label>
+            <input type="text" id="Contragen" disabled>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
